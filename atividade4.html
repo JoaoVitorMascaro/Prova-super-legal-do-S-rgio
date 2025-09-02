@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <title>Atividade Avaliativa - JavaScript - Atividade 4</title>
+</head>
+<body>
+    <header>
+        <div class="titulo">Atividade Avaliativa</div>
+        <div class="sub-titulo">Manipulando DOM com JavaScript</div>        
+    </header>
+    <nav>
+        <a href="index.html">Página Inicial</a>
+        <a href="atividade1.html">Atividade 1</a>
+        <a href="atividade2.html">Atividade 2</a>
+        <a href="atividade3.html">Atividade 3</a>
+        <a href="atividade4.html">Atividade 4</a>
+    </nav>
+
+    <div class="container">
+        <h1>Atividade 4 - Calculadora de Desconto</h1>
+        <p>
+            Com base nos valores informados pelo usuário, 
+            implemente a calculadora abaixo para determinar:
+        </p>
+        <ul>
+            <li>Percentual de desconto (%);</li>
+            <li>Valor do desconto (R$);</li>
+            <li>Valor líquido do pedido (R$):</li>
+            <li>Valor do pedido >= R$ 500 ===> Desconto de 0,5%</li>
+            <li>Valor do pedido >= R$ 1000 ===> Desconto de 0,8%</li>
+            <li>Valor do pedido >= R$ 1500 ===> Desconto de 1,0%</li>
+            <li>Valor do pedido >= R$ 2000 ===> Desconto de 1,5%</li>
+        </ul>
+        <hr />
+        
+        <form id="frmCalc" name="frmCalc" action="#">
+            <div class="div-inputs-calc">
+                <div class="input-block">
+                    <label for="inValorPedido">Valor do pedido:</label>
+                    <input id="inValorPedido" name="inValorPedido" type="number" placeholder="Valor do pedido" />
+                </div>
+                <div class="input-block">
+                    <label for="inPercDesc">Desconto (%):</label>
+                    <input id="inPercDesc" name="inPercDesc" type="number" value="0" readonly />
+                </div>
+                <div class="input-block">
+                    <label for="inValDesc">Desconto (R$):</label>
+                    <input id="inValDesc" name="inValDesc" type="number" value="0" readonly />
+                </div>
+                <div class="input-block">
+                    <label for="inValFinal">Valor líquido (R$):</label>
+                    <input id="inValFinal" name="inValFinal" type="number" value="0" readonly />
+                </div>
+            </div>
+            <div class="div-botoes">
+                <button id="btnEnviar" name="btnEnviar" type="button" onclick="calculoDesconto()">Calcular</button>  
+            </div>
+        </form>
+        
+    </div>
+
+    <footer>
+        Professor
+        <a href="https://github.com/Sergio-Lacerda" target="_blank">
+            Sérgio Lacerda
+        </a> 
+    </footer>    
+</body>
+<script src="js/scripts.js"></script>
+</html>
